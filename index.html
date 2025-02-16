@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DINKOB CONSULTANCY SERVICES</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link href="https://unpkg.com/tailwindcss@^2.0/dist/tailwind.min.css" rel="stylesheet">
+  <link href="/fonts/custom-font.css" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+    body {
+      font-family: 'Roboto';
+      /*font-family: 'Roboto', sans-serif;*/
+    }
+    .sidebar {
+      transform: translateX(-100%);
+      transition: transform 0.3s ease-in-out;
+    }
+    .sidebar.active {
+      transform: translateX(0);
+    }
+    /* .roboto-100 {
+  font-family: "Roboto", serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+} */
+  </style>
+</head>
+<body class="bg-gray-100">
+  
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md fixed w-full z-10">
+    <div class="container mx-auto px-5 flex justify-between items-center py-4">
+      <div class="text-2xl font-bold">DINKOB</div>
+      <div class="space-x-6 hidden md:flex font-semibold">
+        <a href="#services" class="hover:text-blue-500">Services</a>
+        <a href="#training" class="hover:text-blue-500">Training</a>
+        <a href="#about" class="hover:text-blue-500">About</a>
+        <a href="#contact" class="hover:text-blue-500">Contact</a>
+      </div>
+      <div class="md:hidden">
+        <button id="menu-btn" class="text-2xl">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Sidebar -->
+  <div id="sidebar" class="fixed top-0 left-0 w-64 h-full bg-white shadow-lg p-5 sidebar z-10">
+    <button id="close-btn" class="text-2xl absolute top-4 right-4">
+      <i class="fas fa-times"></i>
+    </button>
+    <nav class="mt-10 flex flex-col space-y-4">
+      <a href="#services" class="hover:text-blue-500">Services</a>
+      <a href="#training" class="hover:text-blue-500">Training</a>
+      <a href="#about" class="hover:text-blue-500">About</a>
+      <a href="#contact" class="hover:text-blue-500">Contact</a>
+    </nav>
+  </div>
+  
+  <!-- Hero Section -->
+  <section class="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-500 via-blue-600 to-blue-500 text-white text-center">
+    <div class="container mx-auto px-5">
+      <h1 class="text-5xl font-bold">Empowering Businesses with Expert Consultancy</h1>
+      <p class="mt-4 text-lg">Your trusted partner in professional growth and business excellence.</p>
+      <a href="#contact" class="mt-6 inline-block bg-white text-blue-500 px-6 py-3 rounded-full font-semibold">Get in Touch</a>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-16 px-5">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6">Our Services</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+        <div class="p-6 bg-white shadow-md rounded-md">
+          <i class="fa-solid fa-helmet-safety text-blue-500 text-3xl mb-4"></i>
+          <h3 class="text-xl font-semibold">Safety Training Programs</h3>
+          <p class="text-gray-600">Comprehensive safety training across various industries, including workplace safety, fire safety, and hazard management.</p>
+        </div>
+        <div class="p-6 bg-white shadow-md rounded-md">
+          <i class="fa-solid fa-building-circle-arrow-right text-blue-500 text-3xl mb-4"></i>
+          <h3 class="text-xl font-semibold">District Assembly Training</h3>
+          <p class="text-gray-600">Capacity building for district assemblies in areas such as revenue mobilization, audit processes, and report writing</p>
+        </div>
+        <div class="p-6 bg-white shadow-md rounded-md">
+          <i class="fa-solid fa-building text-blue-500 text-3xl mb-4"></i>
+          <h3 class="text-xl font-semibold">Workplace Productivity Improvement</h3>
+          <p class="text-gray-600">Training on modern techniques to enhance efficiency, time management, and team performance</p>
+        </div>
+        <div class="p-6 bg-white shadow-md rounded-md">
+          <i class="fa-solid fa-screwdriver-wrench text-blue-500 text-3xl mb-4"></i>
+          <h3 class="text-xl font-semibold">Operations and Maintenance of Structures</h3>
+          <p class="text-gray-600">Guidance on the effective management and upkeep of public and private infrastructure.</p>
+        </div>
+        <div class="p-6 bg-white shadow-md rounded-md">
+          <i class="fa-solid fa-scale-balanced text-blue-500 text-3xl mb-4"></i>
+          <h3 class="text-xl font-semibold">By-Laws Development and Implementation</h3>
+          <p class="text-gray-600">Training on creating, understanding, and enforcing district assembly by-laws.</p>
+        </div>
+        <div class="p-6 bg-white shadow-md rounded-md">
+          <i class="fa-solid fa-person-military-pointing text-blue-500 text-3xl mb-4"></i>
+          <h3 class="text-xl font-semibold">City Guard and Task Force Training</h3>
+          <p class="text-gray-600">Specialized training for city guards and task forces in security, surveillance, and public safety.</p>
+        </div>
+        <div class="p-6 bg-white shadow-md rounded-md">
+          <i class="fa-solid fa-car text-blue-500 text-3xl mb-4"></i>
+          <h3 class="text-xl font-semibold">Defensive Driving Training</h3>
+          <p class="text-gray-600">Modern defensive driving courses to improve road safety and reduce accidents.</p>
+        </div>
+        <div class="p-6 bg-white shadow-md rounded-md">
+          <i class="fa-solid fa-shield text-blue-500 text-3xl mb-4"></i>
+          <h3 class="text-xl font-semibold">Security and Surveillance Training</h3>
+          <p class="text-gray-600">Advanced training in security protocols, surveillance systems, and risk management.</p>
+        </div>
+        <div class="p-6 bg-white shadow-md rounded-md">
+          <i class="fa-solid fa-broom text-blue-500 text-3xl mb-4"></i>
+          <h3 class="text-xl font-semibold">Office Cleaning and Housekeeping Training</h3>
+          <p class="text-gray-600">Modern techniques for maintaining clean, safe, and efficient workplaces.</p>
+        </div>
+        <div class="p-6 bg-white shadow-md rounded-md">
+          <i class="fa-brands fa-leanpub text-blue-500 text-3xl mb-4"></i>
+          <h3 class="text-xl font-semibold">Upskilling and Professional Development</h3>
+          <p class="text-gray-600">Tailored training programs to enhance skills and knowledge in various professional fields.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Training Programs Section -->
+  <section id="training" class="py-16 bg-gray-100 px-5">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6">Training Programs</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 text-left">
+        <div class="p-6 bg-white shadow-md rounded-md">
+          <h3 class="text-xl font-semibold">Safety Training Programs</h3>
+          <p class="text-gray-600">Comprehensive workplace safety programs, including hazard identification, risk assessment, and emergency response.</p>
+          <img src="https://images.pexels.com/photos/8487775/pexels-photo-8487775.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="img" class="h-64 w-full object-cover mt-4 rounded-lg"/>
+        </div>
+        <div class="p-6 bg-white shadow-md rounded-md">
+          <h3 class="text-xl font-semibold">Driver Training Programs</h3>
+          <p class="text-gray-600">Defensive driving techniques, road safety regulations, modern vehicle techniques, and vehicle maintenance.</p>
+          <img src="https://images.pexels.com/photos/13781/pexels-photo-13781.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="img" class="h-64 w-full object-cover mt-4 rounded-lg"/>
+        </div>
+        <div class="p-6 bg-white shadow-md rounded-md">
+          <h3 class="text-xl font-semibold">Health, Environment, and Sanitation Training</h3>
+          <p class="text-gray-600">Workplace health practices, environmental sustainability, and sanitation protocols.</p>
+          <img src="https://images.pexels.com/photos/287227/pexels-photo-287227.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="img" class="h-64 w-full object-cover mt-4 rounded-lg"/>
+        </div>
+        <div class="p-6 bg-white shadow-md rounded-md">
+          <h3 class="text-xl font-semibold">Security and Task Force Training</h3>
+          <p class="text-gray-600">Security protocols, surveillance techniques, and crisis management for task forces.</p>
+          <img src="https://images.pexels.com/photos/7714697/pexels-photo-7714697.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="img" class="h-64 w-full object-cover mt-4 rounded-lg"/>
+        </div>
+        <div class="p-6 bg-white shadow-md rounded-md">
+          <h3 class="text-xl font-semibold">Motor Riding Training</h3>
+          <p class="text-gray-600">Security protocols, surveillance techniques, and crisis management for task forces.</p>
+          <img src="https://images.pexels.com/photos/3789570/pexels-photo-3789570.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="img" class="h-64 w-full object-cover mt-4 rounded-lg"/>
+        </div>
+        <div class="p-6 bg-white shadow-md rounded-md">
+          <h3 class="text-xl font-semibold">Administrative Training</h3>
+          <p class="text-gray-600">Office administration, record-keeping, and workflow optimization.</p>
+          <img src="https://images.pexels.com/photos/1181524/pexels-photo-1181524.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="img" class="h-64 w-full object-cover mt-4 rounded-lg"/>
+        </div>
+        <div class="p-6 bg-white shadow-md rounded-md">
+          <h3 class="text-xl font-semibold">Defensive Driving Training</h3>
+          <p class="text-gray-600">Modern defensive driving courses to improve road safety and reduce accidents.</p>
+          <img src="https://images.pexels.com/photos/30658213/pexels-photo-30658213/free-photo-of-kia-ev9-gt-on-scenic-road-at-sunset.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="img" class="h-64 w-full object-cover mt-4 rounded-lg"/>
+        </div>
+        <div class="p-6 bg-white shadow-md rounded-md">
+          <h3 class="text-xl font-semibold">Revenue Collection Training</h3>
+          <p class="text-gray-600">Effective revenue mobilization strategies and compliance with financial regulations.</p>
+          <img src="https://images.pexels.com/photos/5909798/pexels-photo-5909798.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="img" class="h-64 w-full object-cover mt-4 rounded-lg"/>
+        </div>
+        <div class="p-6 bg-white shadow-md rounded-md">
+          <h3 class="text-xl font-semibold">Report Writing Training</h3>
+          <p class="text-gray-600">Professional report writing, data analysis, and documentation skills.</p>
+          <img src="https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="img" class="h-64 w-full object-cover mt-4 rounded-lg"/>
+        </div>
+        <div class="p-6 bg-white shadow-md rounded-md">
+          <h3 class="text-xl font-semibold">Local Government Training Programs</h3>
+          <p class="text-gray-600">Capacity building for local government staff in areas like by-law enforcement, project management, and public service delivery.</p>
+          <img src="https://images.pexels.com/photos/7103120/pexels-photo-7103120.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="img" class="h-64 w-full object-cover mt-4 rounded-lg"/>
+        </div>
+        <div class="p-6 bg-white shadow-md rounded-md">
+          <h3 class="text-xl font-semibold">Workplace Productivity Training</h3>
+          <p class="text-gray-600">Techniques to improve efficiency, time management, and team collaboration.</p>
+          <img src="https://images.pexels.com/photos/380769/pexels-photo-380769.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="img" class="h-64 w-full object-cover mt-4 rounded-lg"/>
+        </div>
+        <div class="p-6 bg-white shadow-md rounded-md">
+          <h3 class="text-xl font-semibold">Upskilling and Professional Development</h3>
+          <p class="text-gray-600">Tailored training programs to enhance skills and knowledge in various professional fields.</p>
+          <img src="https://images.pexels.com/photos/1181243/pexels-photo-1181243.jpeg?auto=compress&cs=tinysrgb&w=600" alt="img" class="h-64 w-full object-cover mt-4 rounded-lg"/>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class=" border-gray-300 my-4"/>
+
+  <!-- About Section -->
+  <section id="about" class="py-16 bg-gray-100 px-5 ">
+    <div class="container mx-auto text-center">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+        <div>
+          <div class="text-left grid gap-8">
+            <div>
+              <h3 class="font-semibold mb-4 ">Mission Statement</h3>
+              <div class="grid gap-4">
+                <p>At Dinkob Consultancy Services, our mission is to empower organizations, institutions, and individuals across Africa with innovative, practical, and transformative training solutions.</p>
+                <p>We are committed to enhancing safety, productivity, and operational excellence through specialized training programs in safety, district assembly operations, defensive driving, security, and modern workplace practices. </p>
+                <p>By delivering tailored, high-quality training, we aim to build capacity, foster sustainable growth, and contribute to the development of thriving communities and businesses.</p>
+              </div>
+
+            </div>
+            <div>
+              <h3 class="font-semibold mb-4">Vision Statement</h3>
+              <p>To be Africa&apos;s leading provider of innovative training and business solutions, empowering individuals and organizations to achieve excellence, safety, and sustainable growth.</p>
+            </div>
+          </div>
+        </div>
+        <div class="border border-gray-300 rounded-lg ">
+          <!-- <img src="" alt="gradient"/> -->
+          <div class=" bg-blue-500 rounded-tr-lg rounded-tl-lg"> <h2 class="text-2xl font-bold mb-6 text-white text-left p-4">About Us</h2></div>
+          <div class="grid gap-4 p-8">
+            <p class="text-gray-700 text-left font-semibold" >Dinkob Consultancy Services is a leading training and business solutions provider, established on 20th September 2024 and duly registered with the Ghana Revenue Authority (GRA) and the Public Procurement Authority (PPA). </p>
+  
+            <p class="text-gray-700 text-left">We are committed to empowering individuals, organizations, and institutions across Ghana and beyond with innovative, practical, and transformative training programs.
+              Our expertise spans a wide range of areas, including safety training, district assembly capacity building, defensive driving, security and surveillance, modern office cleaning and housekeeping, and upskilling programs.
+            </p>
+  
+            <p class="text-gray-700 text-left">At Dinkob, we believe in equipping our clients with the skills, knowledge, and tools they need to excel in their respective fields, fostering productivity, safety, and sustainable growth.
+              Driven by a passion for excellence, we aim to be the go-to consultancy firm for businesses and public institutions seeking tailored, high-quality training solutions.
+            </p>
+            <p class="text-gray-700 text-left">Whether it's enhancing workplace productivity, improving operational efficiency, or building technical expertise, Dinkob Consultancy Services is your trusted partner for success..
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <!-- Gallery Section -->
+   <section id="gallery" class="py-16 px-5">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6">Gallery</h2>
+      <div></div>
+    </div>
+   </section>
+  
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 px-5">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6">Contact Us</h2>
+      <p class="text-gray-700">Reach out to us for consultancy and training services.</p>
+      <p class="text-gray-700 font-semibold my-2 text-2xl">+233 241187334/ +233 203434743</p>
+      <div class="mt-6 space-x-4">
+        <a href="" class="text-blue-500 text-2xl"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="text-blue-500 text-2xl"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="text-blue-500 text-2xl"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="bg-blue-500 text-white text-center py-4 text-base">
+    <p>&copy; 2025 DINKOB CONSULTANCY SERVICES. All Rights Reserved.</p>
+  </footer>
+
+
+  <script>
+    document.getElementById('menu-btn').addEventListener('click', function() {
+      document.getElementById('sidebar').classList.add('active');
+    });
+    
+    document.getElementById('close-btn').addEventListener('click', function() {
+      document.getElementById('sidebar').classList.remove('active');
+    });
+  </script>
+</body>
+</html>
