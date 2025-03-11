@@ -41,11 +41,13 @@
   <!-- Navbar -->
   <nav class="bg-white shadow-md fixed w-full z-10">
     <div class="container mx-auto px-5 flex justify-between items-center py-4 ">
-      <div class="text-2xl font-bold ">Xpert Safety Consult</div>
+      <div class="text-xl font-bold flex items-center gap-2"><img src="/images/logo-v.jpeg"
+          class="w-[30px] h-[30px]" />Xpert Safety
+        Consult</div>
       <div class="space-x-6 hidden md:flex font-semibold">
+        <a href="#about" class="hover:text-blue-500">About</a>
         <a href="#services" class="hover:text-blue-500">Services</a>
         <a href="#training" class="hover:text-blue-500">Training</a>
-        <a href="#about" class="hover:text-blue-500">About</a>
         <a href="#gallery" class="hover:text-blue-500">Gallery</a>
         <a href="#contact" class="hover:text-blue-500">Contact</a>
       </div>
@@ -63,16 +65,16 @@
       <i class="fas fa-times"></i>
     </button>
     <nav class="mt-10 flex flex-col space-y-4">
+      <a href="#about" class="hover:text-blue-500">About</a>
       <a href="#services" class="hover:text-blue-500">Services</a>
       <a href="#training" class="hover:text-blue-500">Training</a>
-      <a href="#about" class="hover:text-blue-500">About</a>
       <a href="#gallery" class="hover:text-blue-500">Gallery</a>
       <a href="#contact" class="hover:text-blue-500">Contact</a>
     </nav>
   </div>
 
   <!-- Hero Section -->
-  <section class="h-screen overflow-y-auto transition bg-[url('/images/1.jpeg')] bg-cover">
+  <section class="h-screen overflow-y-auto transition bg-[url('/images/logo-h.jpeg')] bg-cover">
     <div
       class="h-full flex items-center justify-center bg-blue-950/90  backdrop-invert backdrop-opacity-10 text-white text-center ">
       <div class="container mx-auto px-5">
@@ -82,7 +84,62 @@
           Touch</a>
       </div>
     </div>
+  </section>
 
+  <!-- About Section -->
+  <section id="about" class="min-h-screen flex justify-center items-center py-16 bg-gray-100 px-5 bg-white">
+    <div class="container mx-auto text-center">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+        <div>
+          <div class="text-left grid gap-8">
+            <div>
+              <h3 class="font-semibold mb-4 ">Mission Statement</h3>
+              <div class="grid gap-4">
+                <p>XSC exists to provide bespoke technical and consultancy services through tailor-made capacity
+                  building solutions and safety techniques to both the public and private sectors.</p>
+              </div>
+
+            </div>
+            <div>
+              <h3 class="font-semibold mb-4">Vision Statement</h3>
+              <p>To become a top-notch service provider in the Consultancy, Management, Health and Safety industry.</p>
+            </div>
+          </div>
+        </div>
+        <div class="borde border-gray-30 rounded-l ">
+          <!-- <img src="" alt="gradient"/> -->
+          <div class=" bg-blue-500 rounded-tr-lg rounded-tl-lg">
+            <h2 class="text-2xl font-bold mb-6 text-white text-left p-4">About Us</h2>
+          </div>
+          <div class="grid gap-4 p-8">
+            <p class="text-gray-700 text-left font-semibold">Established in 2014, Xpert Safety Consult is a trusted sole
+              proprietorship company dedicated to delivering state-of-the-art business solutions that enhance
+              productivity, efficiency, and safety across all sectors With nearly a decade of experience,
+              we specialize in providing comprehensive training programs and consultancy services tailored to meet the
+              unique needs of organizations in Ghana and beyond.</p>
+
+            <p class="text-gray-700 text-left">Our expertise spans a wide range of areas, including safety training,
+              driver training, health, environment, and sanitation, security and task force training, motor riding,
+              administration, revenue collection, report writing, and local government training programs.
+              Whether you&apos;re looking to improve workplace safety, boost operational efficiency, or build capacity
+              in
+              your team, Xpert Safety Consult is your reliable partner for success.
+
+            </p>
+
+            <p class="text-gray-700 text-left">At Xpert Safety Consult, we pride ourselves on delivering practical,
+              innovative, and results-driven solutions that empower organizations to thrive in a competitive and
+              ever-changing environment.
+              Our commitment to excellence, coupled with our passion for safety and productivity, makes us the go-to
+              choice for businesses and institutions seeking transformative training and consultancy services.
+            </p>
+            <p class="text-gray-700 text-left">Whether it's enhancing workplace productivity, improving operational
+              efficiency, or building technical expertise, Xpert Safety Consult is your trusted partner for success.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- Services Section -->
@@ -152,7 +209,7 @@
   </section>
 
   <!-- Training Programs Section -->
-  <section id="training" class="py-16 bg-gray-100 px-5 bg-white">
+  <section id="training" class="py-16 bg-gray-10 px-5 bg-white">
     <div class="container mx-auto text-center">
       <h2 class="text-3xl font-bold mb-6">Training Programs</h2>
       <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 text-left">
@@ -160,9 +217,7 @@
           <h3 class="text-xl font-semibold">Safety Training Programs</h3>
           <p class="text-gray-600">Comprehensive workplace safety programs, including hazard identification, risk
             assessment, and emergency response.</p>
-          <img
-            src="https://images.pexels.com/photos/8487775/pexels-photo-8487775.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            alt="img" class="h-64 w-full object-cover mt-4 rounded-lg" />
+          <img src="/images/13.jpg" alt="img" class="h-64 w-full object-cover mt-4 rounded-lg" />
         </div>
         <div class="p-6 bg-white shadow-md rounded-md">
           <h3 class="text-xl font-semibold">Driver Training Programs</h3>
@@ -251,66 +306,8 @@
     </div>
   </section>
 
-  <!-- About Section -->
-  <section id="about" class="min-h-screen flex justify-center items-center py-16 bg-gray-100 px-5 ">
-    <div class="container mx-auto text-center">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-        <div>
-          <div class="text-left grid gap-8">
-            <div>
-              <h3 class="font-semibold mb-4 ">Mission Statement</h3>
-              <div class="grid gap-4">
-                <p>At Xpert Safety Consult, our mission is to empower organizations, institutions, and individuals
-                  across Africa with innovative, practical, and transformative training solutions.</p>
-                <p>We are committed to enhancing safety, productivity, and operational excellence through specialized
-                  training programs in safety, district assembly operations, defensive driving, security, and modern
-                  workplace practices. </p>
-                <p>By delivering tailored, high-quality training, we aim to build capacity, foster sustainable growth,
-                  and contribute to the development of thriving communities and businesses.</p>
-              </div>
-
-            </div>
-            <div>
-              <h3 class="font-semibold mb-4">Vision Statement</h3>
-              <p>To be Africa&apos;s leading provider of innovative training and business solutions, empowering
-                individuals and organizations to achieve excellence, safety, and sustainable growth.</p>
-            </div>
-          </div>
-        </div>
-        <div class="borde border-gray-30 rounded-l ">
-          <!-- <img src="" alt="gradient"/> -->
-          <div class=" bg-blue-500 rounded-tr-lg rounded-tl-lg">
-            <h2 class="text-2xl font-bold mb-6 text-white text-left p-4">About Us</h2>
-          </div>
-          <div class="grid gap-4 p-8">
-            <p class="text-gray-700 text-left font-semibold">Xpert Safety Consult is a leading training and business
-              solutions provider, established on 20th September 2024 and duly registered with the Ghana Revenue
-              Authority (GRA) and the Public Procurement Authority (PPA). </p>
-
-            <p class="text-gray-700 text-left">We are committed to empowering individuals, organizations, and
-              institutions across Ghana and beyond with innovative, practical, and transformative training programs.
-              Our expertise spans a wide range of areas, including safety training, district assembly capacity building,
-              defensive driving, security and surveillance, modern office cleaning and housekeeping, and upskilling
-              programs.
-            </p>
-
-            <p class="text-gray-700 text-left">At Xpert Safety Consult, we believe in equipping our clients with the
-              skills, knowledge, and tools they need to excel in their respective fields, fostering productivity,
-              safety, and sustainable growth.
-              Driven by a passion for excellence, we aim to be the go-to consultancy firm for businesses and public
-              institutions seeking tailored, high-quality training solutions.
-            </p>
-            <p class="text-gray-700 text-left">Whether it's enhancing workplace productivity, improving operational
-              efficiency, or building technical expertise, Xpert Safety Consult is your trusted partner for success..
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- Gallery Section -->
-  <section id="gallery" class="py-16 px-5 bg-white">
+  <section id="gallery" class="py-16 px-5 bg-whit bg-gray-100">
     <div class="container mx-auto text-center">
       <h2 class="text-3xl font-bold mb-6">Gallery</h2>
       <div id="gallery-container" class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
@@ -323,7 +320,7 @@
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="py-16 px-5">
+  <section id="contact" class="py-16 px-5 bg-white">
     <div class="container mx-auto text-center">
       <h2 class="text-3xl font-bold mb-6">Contact Us</h2>
       <p class="text-gray-700">Reach out to us for consultancy and training services.</p>
